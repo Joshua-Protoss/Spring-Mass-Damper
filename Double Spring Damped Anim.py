@@ -27,7 +27,7 @@ def G(y,t):                                     #state_space method
     
     return np.array([x1_dd, x2_dd, x1_d, x2_d])
 
-##def G(y,t):                                    #matrix method
+##def G(y,t):                                    #matrix method (undamped)
 ##    return A_inv.dot( F(t) - B.dot(y))
 
 def RK4_step(y, t, dt):
